@@ -1,0 +1,15 @@
+{
+    "name": "elluminatte/phpstan-magento",
+    "description": "Magento 1 extension for PHPStan",
+    "type": "library",
+    "require": {
+        "phpstan/phpstan": "^0.7.0"
+    },
+    "authors": [
+        {
+            "name": "salov",
+            "email": "elluminatte@gmail.com"
+        }
+    ],
+    "minimum-stability": "stable"
+}
