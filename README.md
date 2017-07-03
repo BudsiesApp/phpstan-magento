@@ -1,7 +1,7 @@
-# Magento 1 extensions for PHPStan
+# Magento 1 extension for PHPStan
 
 * [PHPStan](https://github.com/phpstan/phpstan)
-* [Doctrine](https://magento.com)
+* [Magento](https://magento.com)
 
 This extension provides following features:
 
