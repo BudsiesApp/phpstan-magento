@@ -11,5 +11,10 @@
             "email": "elluminatte@gmail.com"
         }
     ],
-    "minimum-stability": "stable"
+    "minimum-stability": "stable",
+    "autoload": {
+		"psr-4": {
+			"PHPStan\\": "src/"
+		}
+	}
 }
