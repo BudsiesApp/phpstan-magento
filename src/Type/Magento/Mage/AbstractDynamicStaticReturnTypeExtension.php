@@ -29,7 +29,7 @@ abstract class AbstractDynamicStaticReturnTypeExtension implements \PHPStan\Type
 
     abstract protected function getMethodName(): string;
 
-    protected function getMagentoConfig(): Mage_Core_Model_Config
+    protected function getMagentoConfig(): \Mage_Core_Model_Config
     {
         return \Mage::app()->getConfig();
     }
