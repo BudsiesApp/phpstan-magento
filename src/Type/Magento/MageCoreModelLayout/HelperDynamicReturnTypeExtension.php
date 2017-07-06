@@ -30,16 +30,11 @@ class HelperDynamicReturnTypeExtension implements \PHPStan\Type\DynamicMethodRet
             return new ObjectType(\Mage_Core_Helper_Abstract::class);
         }
 
-        $config = $this->getMagentoConfig();
+        $config = \Mage::app()->getConfig();
 
         $helperName = $methodCall->args[0]->value->value;
         $helperClassName = $config->getHelperClassName($helperName);
 
         return new ObjectType($helperClassName);
-    }
-
-    protected function getMagentoConfig(): \Mage_Core_Model_Config
-    {
-        return \Mage::app()->getConfig();
     }
 }
