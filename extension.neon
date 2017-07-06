@@ -15,3 +15,7 @@ services:
         class: PHPStan\Type\Magento\Mage\HelperDynamicStaticReturnTypeExtension
         tags:
             - phpstan.broker.dynamicStaticMethodReturnTypeExtension
+    -
+        class: PHPStan\Type\Magento\MageCoreModelLayout\HelperDynamicReturnTypeExtension
+        tags:
+            - phpstan.broker.dynamicMethodReturnTypeExtension
