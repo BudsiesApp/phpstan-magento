@@ -1,5 +1,5 @@
 {
-    "name": "elluminatte/phpstan-magento",
+    "name": "BudsiesApp/phpstan-magento",
     "description": "Magento 1 extension for PHPStan",
     "type": "library",
     "require": {
