@@ -16,7 +16,7 @@ class HelperDynamicStaticReturnTypeExtension extends AbstractDynamicStaticReturn
         Scope $scope
     ): Type {
         if(empty($methodCall->args[0]->value->value)) {
-            throw new \Exception('Could not fetch helper name from method call');
+            return new ObjectType(\Mage_Core_Helper_Abstract::class);
         }
 
         $config = $this->getMagentoConfig();

@@ -16,7 +16,7 @@ class GetModelDynamicStaticReturnTypeExtension extends AbstractDynamicStaticRetu
         Scope $scope
     ): Type {
         if(empty($methodCall->args[0]->value->value)) {
-            throw new \Exception('Could not fetch model name from method call');
+            return new ObjectType(\Mage_Core_Model_Abstract::class);
         }
 
         $config = $this->getMagentoConfig();

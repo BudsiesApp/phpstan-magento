@@ -16,7 +16,7 @@ class GetResourceModelDynamicStaticReturnTypeExtension extends AbstractDynamicSt
         Scope $scope
     ): Type {
         if(empty($methodCall->args[0]->value->value)) {
-            throw new \Exception('Could not fetch resource model name from method call');
+            return new ObjectType(\Mage_Core_Model_Resource::class);
         }
 
         $config = $this->getMagentoConfig();
