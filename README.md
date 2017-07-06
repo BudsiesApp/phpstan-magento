@@ -12,12 +12,12 @@ This extension provides following features:
 To use this extension, require it in [Composer](https://getcomposer.org/):
 
 ```
-composer require elluminatte/phpstan-magento
+composer require BudsiesApp/phpstan-magento
 ```
 
 And include extension.neon in your project's PHPStan config:
 
 ```
 includes:
-	- vendor/elluminatte/phpstan-magento/extension.neon
+	- vendor/BudsiesApp/phpstan-magento/extension.neon
 ```
