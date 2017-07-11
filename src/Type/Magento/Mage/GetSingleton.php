@@ -2,7 +2,7 @@
 
 namespace PHPStan\Type\Magento\Mage;
 
-class GetSingletonDynamicStaticReturnTypeExtension extends GetModelDynamicStaticReturnTypeExtension
+class GetSingleton extends GetModel
 {
     protected function getMethodName(): string
     {

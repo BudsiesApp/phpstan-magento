@@ -1,21 +1,21 @@
 services:
     -
-        class: PHPStan\Type\Magento\Mage\GetModelDynamicStaticReturnTypeExtension
+        class: PHPStan\Type\Magento\Mage\GetModel
         tags:
             - phpstan.broker.dynamicStaticMethodReturnTypeExtension
     -
-        class: PHPStan\Type\Magento\Mage\GetResourceModelDynamicStaticReturnTypeExtension
+        class: PHPStan\Type\Magento\Mage\GetResourceModel
         tags:
             - phpstan.broker.dynamicStaticMethodReturnTypeExtension
     -
-        class: PHPStan\Type\Magento\Mage\GetSingletonDynamicStaticReturnTypeExtension
+        class: PHPStan\Type\Magento\Mage\GetSingleton
         tags:
             - phpstan.broker.dynamicStaticMethodReturnTypeExtension
     -
-        class: PHPStan\Type\Magento\Mage\HelperDynamicStaticReturnTypeExtension
+        class: PHPStan\Type\Magento\Mage\Helper
         tags:
             - phpstan.broker.dynamicStaticMethodReturnTypeExtension
     -
-        class: PHPStan\Type\Magento\MageCoreModelLayout\HelperDynamicReturnTypeExtension
+        class: PHPStan\Type\Magento\MageCoreModelLayout\Helper
         tags:
             - phpstan.broker.dynamicMethodReturnTypeExtension
