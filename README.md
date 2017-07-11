@@ -5,7 +5,7 @@
 
 This extension provides following features:
 
-* Provides correct return type for `Mage::helper()`, `Mage::getModel()`, `Mage::getResourceModel()`, `Mage::getSingleton()` methods
+* Provides correct return type for `Mage::helper()`, `Mage::getModel()`, `Mage::getResourceModel()`, `Mage::getSingleton()`, `Mage_Core_Model_Layout->helper()` methods
 
 ## Usage
 
