@@ -8,7 +8,7 @@ use PHPStan\Reflection\MethodReflection;
 use PHPStan\Type\Type;
 use PHPStan\Type\ObjectType;
 
-class HelperDynamicStaticReturnTypeExtension extends AbstractDynamicStaticReturnTypeExtension
+class GetModel extends StaticMethodReturnTypeDetector
 {
     public function getTypeFromStaticMethodCall(
         MethodReflection $methodReflection,
@@ -16,19 +16,19 @@ class HelperDynamicStaticReturnTypeExtension extends AbstractDynamicStaticReturn
         Scope $scope
     ): Type {
         if(empty($methodCall->args[0]->value->value)) {
-            return new ObjectType(\Mage_Core_Helper_Abstract::class);
+            return new ObjectType(\Mage_Core_Model_Abstract::class);
         }
 
         $config = $this->getMagentoConfig();
 
-        $helperName = $methodCall->args[0]->value->value;
-        $helperClassName = $config->getHelperClassName($helperName);
+        $modelName = $methodCall->args[0]->value->value;
+        $modelClassName = $config->getModelClassName($modelName);
 
-        return new ObjectType($helperClassName);
+        return new ObjectType($modelClassName);
     }
 
     protected function getMethodName(): string
     {
-        return 'helper';
+        return 'getModel';
     }
 }

@@ -7,7 +7,7 @@ use PHPStan\Analyser\Scope;
 use PHPStan\Reflection\MethodReflection;
 use PHPStan\Type\Type;
 
-abstract class AbstractDynamicStaticReturnTypeExtension implements \PHPStan\Type\DynamicStaticMethodReturnTypeExtension
+abstract class StaticMethodReturnTypeDetector implements \PHPStan\Type\DynamicStaticMethodReturnTypeExtension
 {
 
     public static function getClass(): string

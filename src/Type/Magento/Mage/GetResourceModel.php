@@ -8,7 +8,7 @@ use PHPStan\Reflection\MethodReflection;
 use PHPStan\Type\Type;
 use PHPStan\Type\ObjectType;
 
-class GetResourceModelDynamicStaticReturnTypeExtension extends AbstractDynamicStaticReturnTypeExtension
+class GetResourceModel extends StaticMethodReturnTypeDetector
 {
     public function getTypeFromStaticMethodCall(
         MethodReflection $methodReflection,

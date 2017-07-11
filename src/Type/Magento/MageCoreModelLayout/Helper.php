@@ -8,7 +8,7 @@ use PHPStan\Reflection\MethodReflection;
 use PHPStan\Type\Type;
 use PHPStan\Type\ObjectType;
 
-class HelperDynamicReturnTypeExtension implements \PHPStan\Type\DynamicMethodReturnTypeExtension
+class Helper implements \PHPStan\Type\DynamicMethodReturnTypeExtension
 {
     public static function getClass(): string
     {
