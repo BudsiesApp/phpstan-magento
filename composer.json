@@ -3,7 +3,7 @@
     "description": "Magento 1 extension for PHPStan",
     "type": "library",
     "require": {
-        "phpstan/phpstan": "^0.7.0"
+        "BudsiesApp/phpstan": "0.7.1"
     },
     "authors": [
         {
@@ -16,5 +16,11 @@
 		"psr-4": {
 			"PHPStan\\": "src/"
 		}
-	}
+	},
+    "repositories": [
+      {
+        "type": "vcs",
+        "url": "https://github.com/BudsiesApp/phpstan.git"
+      }
+    ]
 }
