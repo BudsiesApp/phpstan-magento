@@ -3,7 +3,7 @@
     "description": "Magento 1 extension for PHPStan",
     "type": "library",
     "require": {
-        "phpstan/phpstan": "^0.7.0"
+        "phpstan/phpstan": "0.7.1"
     },
     "authors": [
         {
