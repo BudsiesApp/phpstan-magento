@@ -10,7 +10,7 @@ use PHPStan\Type\Type;
 abstract class StaticMethodReturnTypeDetector implements \PHPStan\Type\DynamicStaticMethodReturnTypeExtension
 {
 
-    public static function getClass(): string
+    public function getClass(): string
     {
         return \Mage::class;
     }

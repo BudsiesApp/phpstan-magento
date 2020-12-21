@@ -10,7 +10,7 @@ use PHPStan\Type\ObjectType;
 
 class Helper implements \PHPStan\Type\DynamicMethodReturnTypeExtension
 {
-    public static function getClass(): string
+    public function getClass(): string
     {
         return \Mage_Core_Model_Layout::class;
     }
